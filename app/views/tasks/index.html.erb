@@ -1,0 +1,12 @@
+<div class="container">
+<h1>My tasks</h1>
+<ul>
+<div class="flexbox-tasks">
+  <% @tasks.each do |task| %>
+      <input type="checkbox" <%= "checked" if task.completed%>>
+      <li><%= link_to task.title, task_path(task) %></li>
+  <% end %>
+</div>
+</ul>
+ <%= link_to "add a new task", tasks_new_path, class: "text-white btn btn-primary" %>
+</div>

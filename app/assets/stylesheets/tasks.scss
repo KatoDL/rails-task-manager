@@ -1,0 +1,19 @@
+// Place all the styles related to the Tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
+.text-white {
+  color: white;
+}
+ body {
+   text-align: center;
+ }
+
+ ul {
+   list-style-type: none;
+ }
+
+.flexbox-tasks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
